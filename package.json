@@ -24,5 +24,18 @@
   },
   "dependencies": {
     "moment": "^2.22.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/blacklizard/nric-malaysia"
+  },
+  "keywords": [
+    "node",
+    "browser",
+    "nric",
+    "malaysia",
+    "nric validator",
+    "kad pe"
+  ],
+  "author": "blacklizard"
 }
