@@ -1,7 +1,7 @@
 {
   "name": "nric-malaysia",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/nric-malaysia.min.js",
   "license": "MIT",
   "scripts": {
     "build": "npm run build-min; npm run build-unminified",
