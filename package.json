@@ -1,6 +1,6 @@
 {
   "name": "nric-malaysia",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "main": "dist/nric-malaysia.min.js",
   "license": "MIT",
   "scripts": {
