@@ -63,10 +63,19 @@ export default class NRIC {
   }
 
   getDateOfBirth() {
-    const dobMoment = moment(this.rawDOB, 'YYMMDD');
+    const now = moment();
+    let dobMoment = moment(this.rawDOB, 'YYMMDD');
+
+    console.log(dobMoment.isAfter(now));
+
+    if (dobMoment.isAfter(now)) {
+      dobMoment = dobMoment.subtract(100, 'y'); // temp fix for people born after 2000, y2k bug ??
+    }
+
     if (dobMoment.isValid()) {
       return dobMoment.format('YYYY-MM-DD');
     }
+
     return false;
   }
 

@@ -34,8 +34,10 @@ describe('Given a NRIC number', () => {
     });
 
     it('should return a valid dob (1980-07-09)', () => {
-      const nric = new NRICUtil('800709-08-5827');
-      expect(nric.getDateOfBirth()).to.be.equal('1980-07-09');
+      const nric1 = new NRICUtil('800709-08-5827');
+      const nric2 = new NRICUtil('550709-08-5827');
+      expect(nric1.getDateOfBirth()).to.be.equal('1980-07-09');
+      expect(nric2.getDateOfBirth()).to.be.equal('1955-07-09');
     });
 
     it('should return a valid state (perak)', () => {
